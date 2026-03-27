@@ -236,11 +236,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding: 0 5rem;
 }
 
-.skills-container {
+.about-container {
   width: 45rem;
   font-size: 1.25rem;
   display: flex;
@@ -268,10 +268,70 @@ h1 {
 
 .glow {
   position: absolute;
-  width: 28rem;
-  height: 28rem;
+  width: 25rem;
+  height: 25rem;
   background: radial-gradient(circle, #ac98da, #3400ad);
   border-radius: 50%;
   filter: blur(100px);
   z-index: -1;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+#skills {
+  position: relative;
+  display: flex;
+  margin-top: 10rem;
+  justify-content: space-between;
+}
+.S-C {
+  display: flex;
+  position: relative;
+}
+
+.g {
+  position: absolute;
+  width: 80rem;
+  height: 50.5rem;
+  border-radius: 0% 50% 50% 0%;
+  background: radial-gradient(#ac98da 0%, #3400ad 100%);
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.card {
+  width: 67.375rem;
+  height: 50.5rem;
+  background-color: #3c0ea84f;
+  border-radius: 0% 50% 50% 0%;
+  border-bottom: 2px #ffffff6c solid;
+  border-top: 2px #ffffff6c solid;
+  border-right: 2px #ffffff6c solid;
+}
+
+.svgs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20rem;
+  pointer-events: none;
+}
+
+.svg1 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.svg2 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.svg3 {
+  position: absolute;
+  top: 70%;
+  right: 0;
 }

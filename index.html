@@ -74,7 +74,7 @@
     <!-- ---------------------ABOUT----------------------- -->
 
     <section id="about">
-      <div class="skills-container">
+      <div class="about-container">
         <h1>About Me</h1>
         <p>
           I am a Computer Science student and developer focused on building
@@ -100,7 +100,52 @@
     </section>
     <!-- ---------------------SKILLS---------------------- -->
 
-    <section id="skills"></section>
+    <section id="skills">
+      <div class="S-C">
+        <div class="card"></div>
+        <div class="g"></div>
+      </div>
+      <div class="svgs">
+        <svg
+          class="svg1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="313"
+          height="975"
+          viewBox="0 0 313 975"
+          fill="none">
+          <path
+            d="M369.437 1.48926C209.103 20.8226 -84.1633 110.589 25.4367 314.989C162.437 570.489 768.937 640.489 657.437 973.989"
+            stroke="#AC98DA"
+            stroke-width="3" />
+        </svg>
+
+        <svg
+          class="svg2"
+          xmlns="http://www.w3.org/2000/svg"
+          width="223"
+          height="975"
+          viewBox="0 0 223 975"
+          fill="none">
+          <path
+            d="M369.437 1.48926C209.103 20.8226 -84.1633 110.589 25.4367 314.989C162.437 570.489 768.937 640.489 657.437 973.989"
+            stroke="#AC98DA"
+            stroke-width="3" />
+        </svg>
+
+        <svg
+          class="svg3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="283"
+          height="955"
+          viewBox="0 0 283 955"
+          fill="none">
+          <path
+            d="M726.095 231.237C632.456 99.5542 412.891 -115.114 283.741 79.6765C122.304 323.165 349.469 890.203 0.26438 952.724"
+            stroke="#AC98DA"
+            stroke-width="3" />
+        </svg>
+      </div>
+    </section>
     <!-- ---------------------PROJECTS-------------------- -->
 
     <section id="projects"></section>
@@ -108,40 +153,14 @@
 
     <section id="contact"></section>
     <!-- ------------------------------------------------- -->
-    <div class="cursor"></div>
 
+    <div class="cursor"></div>
     <script>
       const cursor = document.querySelector(".cursor");
 
       document.addEventListener("mousemove", (e) => {
         cursor.style.left = e.clientX + "px";
         cursor.style.top = e.clientY + "px";
-      });
-
-      let lastX = 0;
-      let lastY = 0;
-
-      document.addEventListener("mousemove", (e) => {
-        const dx = e.clientX - lastX;
-        const dy = e.clientY - lastY;
-
-        const angle = Math.atan2(dy, dx) * (180 / Math.PI);
-
-        const trail = document.createElement("div");
-        trail.classList.add("trail");
-
-        trail.style.left = e.clientX + "px";
-        trail.style.top = e.clientY + "px";
-        trail.style.transform += ` rotate(${angle}deg)`;
-
-        document.body.appendChild(trail);
-
-        setTimeout(() => {
-          trail.remove();
-        }, 200);
-
-        lastX = e.clientX;
-        lastY = e.clientY;
       });
     </script>
   </body>
